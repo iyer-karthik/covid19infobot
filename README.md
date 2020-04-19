@@ -7,7 +7,6 @@ The bot is programmed to answer the number of confirmed or recovered cases or de
  
 The bot can also answer questions on symptoms, prevention methods, vaccination or method of spread for COVID-19.
 
-Here's a demo.
 ![screenshot](../master//images/screenshot-bot.gif)
 
 ## Table of contents
