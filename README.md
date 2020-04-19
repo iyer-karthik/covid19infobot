@@ -43,10 +43,10 @@ Since new Slack apps don't connect to `rtm.connect`, you'll need to have a class
 8. Go back to "Install App" under Settings. You should see a Bot User OAuth Access Token - a string that starts with 'xoxb'. Save this token.
 
 ## How to use this bot?
-1. Now that a bot token has been created, clone this repository\
+1. Once a bot is registered and a token created, clone this repository\
 `git clone https://github.com/iyer-karthik/covid19infobot` 
 
-2. Create a virtual environment and activate it. cd into the folder for the repository and do a\
+2. Create a virtual environment and activate it. cd into the folder for the repository and run\
 `pip install -r requirements.txt`
 
 3. Finally run `main.py bot_token`\
