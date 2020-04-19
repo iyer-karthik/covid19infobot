@@ -48,7 +48,6 @@ def msg_detected(**payload):
         return
 
     processed_message_details = msg_processor.process(message_text)
-    print(processed_message_details)
     logger.info("Processed message details")
     logger.info(processed_message_details)
 

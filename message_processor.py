@@ -61,7 +61,6 @@ class MessageProcessor(object):
         extracted_countries = [token for token in re.split("(\W+|\,+)", message) 
                               if token in self.api_object.country_slug]
         extracted_countries += self.__ngram_countries(message) 
-        print(extracted_countries)
 
         # Since we have a many-to-one mapping of the country names to country codes,
         # extract only the unique country codes
