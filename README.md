@@ -1,13 +1,19 @@
 # Slack info bot for COVID 19
 
 ## Introduction
-A simple interactive bot for COVID 19 information. 
+A lightweight interactive bot for COVID 19 information. 
 
-The bot is programmed to answer the number of confirmed or recovered cases or deaths due to COVID-19 in different countries with an additional functionaility of plotting the results in a graph. 
+The bot is programmed to answer the number of confirmed or recovered cases or deaths due to COVID-19 in different countries with an additional functionaility of plotting the results in a graph.
  
 The bot can also answer questions on symptoms, prevention methods, vaccination or method of spread for COVID-19.
 
-## How it works? 
+## Table of contents
+1. [ How it works? ](#works)
+2. [ How to regesiter a Slack bot?](#register)
+3. [ How to run the bot?](#run)
+
+<a name="works"></a>
+### How it works? 
 The back-end of the bot is fairly straightforward. 
 
 The intent of a chat is parsed through a bunch of regexes. Pre-set responses are delivered for most of the 
@@ -15,9 +21,10 @@ requests. Currently there is no NLP involved.
 
 For questions related to the number of cases for different countries, an API call is made 
 to https://covid19api.com, results are formatted and if asked, a matplotlib plot is created, 
-and these are then served in the response.
+and these are then served in the response. Results are updated every hour.
 
-## How to register a Slack bot?
+<a name="register"></a>
+### How to register a Slack bot?
 1. To use this bot please ensure that you create a classic slack app (https://api.slack.com/rtm#classic).
 Since new Slack apps don't connect to `rtm.connect`, you'll need to have a classic Slack app to get started.
 
@@ -42,7 +49,8 @@ Since new Slack apps don't connect to `rtm.connect`, you'll need to have a class
 
 8. Go back to "Install App" under Settings. You should see a Bot User OAuth Access Token - a string that starts with 'xoxb'. Save this token.
 
-## How to use this bot?
+<a name="run"></a>
+### How to run this bot?
 1. Once a bot is registered and a token created, clone this repository\
 `git clone https://github.com/iyer-karthik/covid19infobot` 
 
