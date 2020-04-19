@@ -44,12 +44,13 @@ Since new Slack apps don't connect to `rtm.connect`, you'll need to have a class
 
 ## How to use this bot?
 1. Now that a bot token has been created, clone this repository\
-`git clone https://github.com/iyer-karthik/covid19infobot` and cd into it. 
+`git clone https://github.com/iyer-karthik/covid19infobot` 
 
-2. Create a virtual ennvironment, activate it and do a `pip install -r requirements.txt`
+2. Create a virtual environment and activate it. cd into the folder for the repository and do a\
+`pip install -r requirements.txt`
 
-3. Finally run `main.py bot_token` (Substitute
-bot_token with your Bot User OAuth Access Token).
+3. Finally run `main.py bot_token`\
+(Substitute bot_token with your Bot User OAuth Access Token.)
 
  
 

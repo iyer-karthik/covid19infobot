@@ -112,7 +112,7 @@ class _OutputFormatter:
         "Here are some examples:\n" +\
         "`@covid19-info-bot Can you tell me the number of confirmed cases in US and Spain?`\n" +\
         "`@covid19-info-bot Can you tell me the number of deaths in China and Italy?`\n" +\
-        "`@covid19-info-bot Can you plot the number of confirmed cases in Mexico and India?`" +\
+        "`@covid19-info-bot Can you plot the number of confirmed cases in Mexico and India?`\n" +\
         "`@covid19-info-bot How does the virus spread?`\n" +\
         "`@covid19-info-bot What are the symptoms?`\n" +\
         "`@covid19-info-bot How does one prevent the virus?`\n" +\
