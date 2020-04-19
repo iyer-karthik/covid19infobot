@@ -186,7 +186,4 @@ if __name__ =="__main__":
     # Start the client
     rtmclient.start()
 
-
-
-# TODO: Add video of slack bot in README and details
-# on deployment
+# TODO: Add details on deployment
