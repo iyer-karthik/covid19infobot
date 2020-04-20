@@ -3,17 +3,18 @@
 ## Introduction
 A lightweight interactive bot for COVID 19 information. 
 
-The bot is programmed to answer the number of confirmed or recovered cases or deaths due to COVID-19 in different countries with an additional functionaility of plotting the results in a graph.
- 
 The bot can also answer questions on symptoms, prevention methods, vaccination or method of spread for COVID-19.
 
-Developed by [iyer-karthik](https://github.com/iyer-karthik) and [srk2siva](https://github.com/srk2siva)/
+Additionally the bot can also get the number of confirmed or recovered cases or deaths due to COVID-19 in different countries with an additional functionality of plotting the results in a graph.
+ 
+
+Developed by [iyer-karthik](https://github.com/iyer-karthik) and [srk2siva](https://github.com/srk2siva). Here's a demo. 
 
 ![screenshot](../master//images/screenshot-bot.gif)
 
 ## Table of contents
 1. [ How it works? ](#works)
-2. [ How to regesiter a Slack bot?](#register)
+2. [ How to register a Slack bot?](#register)
 3. [ How to run the bot?](#run)
 4. [ How to host the bot?](#host)
 
@@ -55,7 +56,7 @@ Since new Slack apps don't connect to `rtm.connect`, you'll need to have a class
 8. Go back to "Install App" under Settings. You should see a Bot User OAuth Access Token - a string that starts with 'xoxb'. Save this token.
 
 <a name="run"></a>
-### How to run this bot?
+### How to run the bot?
 1. Once a bot is registered and a token created, clone this repository\
 `git clone https://github.com/iyer-karthik/covid19infobot` 
 https://github.com/iyer-karthik/
