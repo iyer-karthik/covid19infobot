@@ -1,14 +1,13 @@
 # Slack info bot for COVID 19
 
 ## Introduction
-A lightweight interactive bot for COVID 19 information. 
+A lightweight interactive bot for COVID 19 information developed by [iyer-karthik](https://github.com/iyer-karthik) and [srk2siva](https://github.com/srk2siva).
 
 The bot can also answer questions on symptoms, prevention methods, vaccination or method of spread for COVID-19.
 
 Additionally the bot can also get the number of confirmed or recovered cases or deaths due to COVID-19 in different countries with an additional functionality of plotting the results in a graph.
  
-
-Developed by [iyer-karthik](https://github.com/iyer-karthik) and [srk2siva](https://github.com/srk2siva). Here's a demo. 
+Here's a demo. 
 
 ![screenshot](../master//images/screenshot-bot.gif)
 
