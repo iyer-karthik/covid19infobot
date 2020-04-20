@@ -185,4 +185,5 @@ if __name__ =="__main__":
     # Start the client
     rtmclient.start()
 
-# TODO: Add details on deployment
+# TODO: Make bot_token an environment variable
+# TODO: Write tests

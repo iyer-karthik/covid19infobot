@@ -7,12 +7,15 @@ The bot is programmed to answer the number of confirmed or recovered cases or de
  
 The bot can also answer questions on symptoms, prevention methods, vaccination or method of spread for COVID-19.
 
+Developed by [iyer-karthik](https://github.com/iyer-karthik) and [srk2siva](https://github.com/srk2siva)/
+
 ![screenshot](../master//images/screenshot-bot.gif)
 
 ## Table of contents
 1. [ How it works? ](#works)
 2. [ How to regesiter a Slack bot?](#register)
 3. [ How to run the bot?](#run)
+4. [ How to host the bot?](#host)
 
 <a name="works"></a>
 ### How it works? 
@@ -55,12 +58,47 @@ Since new Slack apps don't connect to `rtm.connect`, you'll need to have a class
 ### How to run this bot?
 1. Once a bot is registered and a token created, clone this repository\
 `git clone https://github.com/iyer-karthik/covid19infobot` 
-
-2. Create a virtual environment and activate it. cd into the folder for the repository and run\
+https://github.com/iyer-karthik/
+2. Create a virtual environment in Python 3.7 and activate it. cd into the folder for the repository and run\
 `pip install -r requirements.txt`
 
-3. Finally run `main.py bot_token`\
-(Substitute bot_token with your Bot User OAuth Access Token.)
+3. Finally run `main.py YOUR-BOT-TOKEN`\
+(Use your Bot User OAuth Access Token.)
+The bot is now activated and you can interact with it. 
+
+
+<a name="host"></a>
+Since the main script always needs to be running in order for the bot to be used, it is better
+to migrate the running to the cloud. We will use Amazon Web Service's free EC2 instance to
+host this script and keep it continually running. 
+
+1. Follow the steps outlined in this [tutorial](https://towardsdatascience.com/deploying-a-python-web-app-on-aws-57ed772b2319) to launch an EC2 instance and SSH into it. 
+We used an Ubuntu Server 18.04 AMI. 
+
+2. This AMI comes equipped with Python 3.6. However we need Python 3.7 to run the bot. 
+
+3. Follow the steps outlined in this [blog](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/) to install Python 3.7 on the EC2 instance. 
+
+4. Install pip for python 3.7 with \
+`python3.7 -m pip install pip`. If the Python 3.7 
+install is missing pip you could try installing it using: `python3.7 -m ensurepip`
+
+5. Now get this repository using \
+`git clone https://github.com/iyer-karthik/covid19infobot.git`
+
+6. Move into the repository and run\
+ `python3.7 -m pip install -r requirements.txt`
+
+7. Finally run `python 3.7 main.py YOUR-BOT-TOKEN`
+
+8. If you want the script to keep running even after you log out of the instance, run it in a Screen session
+
+```
+# From within the repository folder
+screen -R deploy
+python3.7 main.py YOUR-BOT-TOKEN
+```
+
 
  
 
