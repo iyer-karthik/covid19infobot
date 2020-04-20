@@ -9,7 +9,7 @@ Additionally the bot can also get the number of confirmed or recovered cases or 
  
 Here's a demo. 
 
-![screenshot](../master//images/screenshot-bot.gif)
+![screenshot](../master//images/slackbot.gif)
 
 ## Table of contents
 1. [ How it works? ](#works)
