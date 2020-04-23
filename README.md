@@ -93,7 +93,7 @@ install is missing pip you could try installing it using: `python3.7 -m ensurepi
 
 7. Set up your Bot User OAuth Access Token as an environment variable called 'SLACK-BOT-TOKEN'.
 
-8. Finally run `python 3.7 main.py`
+8. Finally run `python3.7 main.py`
 
 9. If you want the script to keep running even after you log out of the instance, run it in a Screen session
 
