@@ -5,7 +5,7 @@ A lightweight interactive bot for COVID 19 information developed by [iyer-karthi
 
 The bot can also answer questions on symptoms, prevention methods, vaccination or method of spread for COVID-19.
 
-Additionally the bot can also get the number of confirmed or recovered cases or deaths due to COVID-19 in different countries with an additional functionality of plotting the results in a graph.
+Additionally the bot can also get the number of confirmed or recovered cases or deaths due to COVID-19 in different countries with an added functionality of plotting the results in a neat graph.
  
 Here's a demo. 
 
@@ -59,11 +59,13 @@ Since new Slack apps don't connect to `rtm.connect`, you'll need to have a class
 1. Once a bot is registered and a token created, clone this repository\
 `git clone https://github.com/iyer-karthik/covid19infobot` 
 https://github.com/iyer-karthik/
-2. Create a virtual environment in Python 3.7 and activate it. cd into the folder for the repository and run\
-`pip install -r requirements.txt`
 
-3. Finally run `main.py YOUR-BOT-TOKEN`\
-(Use your Bot User OAuth Access Token.)
+2. Create a virtual environment in Python 3.7 and activate it. cd into the folder for the repository and run\
+`pip install -r requirements.txt`. 
+
+3. Set up your Bot User OAuth Access Token as an environment variable called 'SLACK-BOT-TOKEN'.
+
+3. Finally run `python main.py`.
 The bot is now activated and you can interact with it. 
 
 
@@ -89,14 +91,16 @@ install is missing pip you could try installing it using: `python3.7 -m ensurepi
 6. Move into the repository and run\
  `python3.7 -m pip install -r requirements.txt`
 
-7. Finally run `python 3.7 main.py YOUR-BOT-TOKEN`
+7. Set up your Bot User OAuth Access Token as an environment variable called 'SLACK-BOT-TOKEN'.
 
-8. If you want the script to keep running even after you log out of the instance, run it in a Screen session
+8. Finally run `python 3.7 main.py`
+
+9. If you want the script to keep running even after you log out of the instance, run it in a Screen session
 
 ```
 # From within the repository folder
 screen -R deploy
-python3.7 main.py YOUR-BOT-TOKEN
+python3.7 main.py
 ```
 
 

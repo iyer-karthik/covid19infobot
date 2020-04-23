@@ -7,7 +7,6 @@ import tempfile
 import os
 import logging
 import time 
-import argparse
 
 import slack
 from slack.errors import SlackApiError
@@ -149,14 +148,6 @@ def msg_detected(**payload):
 
 if __name__ =="__main__":
 
-    parser = argparse.ArgumentParser()
-    parser.add_argument("bot_token", 
-                        type=str,
-                        help="use the bot token to connect the bot. This token can be found " +\
-                             "under Bot User OAuth Access Token tab of `OAuth and Permissions` " +\
-                             "page of your bot. The bot token will start with an 'xoxb-'")
-    args = parser.parse_args()
-
     # Set up logging
     logging.basicConfig(filename='../covidbot.log',
                         filemode='a',
@@ -175,7 +166,7 @@ if __name__ =="__main__":
 
     # Initialize the proper slack clients
     try:
-        slack_bot_token = args.bot_token
+        slack_bot_token = os.environ.get('SLACK_BOT_TOKEN')
         rtmclient = RTMClient(token=slack_bot_token, connect_method='rtm.start', auto_reconnect=True)
         web_client = WebClient(slack_bot_token, timeout=30) # Used for posting messages
         bot_id = (web_client.api_call("auth.test")["user_id"].lower())
@@ -185,5 +176,4 @@ if __name__ =="__main__":
     # Start the client
     rtmclient.start()
 
-# TODO: Make bot_token an environment variable
 # TODO: Write tests
